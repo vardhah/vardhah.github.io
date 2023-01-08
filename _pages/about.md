@@ -32,7 +32,7 @@ __Research summary:__ I am interested in advancing research in AI and applied ma
 - *2022.07*: &nbsp;🎉🎉 Presented the deep active learning work at [ReALML](https://realworldml.github.io/) workshop at [ICML2022](https://icml.cc/Conferences/2022). 
 
 # 📝 Publications 
- - [Data efficient surrogate modeling for engineering design: Ensemble-free batch mode deep active learning for regression](https://arxiv.org/abs/2211.10360) : submitted at **Engineering Application of Artificial Intelligence (EAAI), Nov 2022**.
+ - [Data efficient surrogate modeling for engineering design: Ensemble-free batch mode deep active learning for regression](https://arxiv.org/abs/2211.10360) : submitted at **Engineering Application of Artificial Intelligence (EAAI), Nov 2022**.[code_github](https://github.com/vardhah/Batch-mode-DeepAL-for-regression)
  - [Deep Learning-based FEA surrogate for sub-sea pressure vessel](https://ieeexplore.ieee.org/document/9982714), published at **IEEE International Conference on Computer, Software, and Modeling, Rome, July, 2022**.
  - [Deep Active Learning for Regression Using ε-weighted Hybrid Query Strategy](https://arxiv.org/abs/2206.13298), in proceeding at **ReALML, International Conference on Machine Learning (ICML 2022), Baltimore**.
  -  [Reduced Robust Random Cut Forest for Out-Of-Distribution detection in machine learning models](https://arxiv.org/abs/2206.09247)  in proceeding at **International Journal of Machine Learning and Computing (IJMLC 2022)**.
