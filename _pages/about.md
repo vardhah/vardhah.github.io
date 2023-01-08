@@ -21,7 +21,10 @@ __Brief bio:__ I am currently pursuing my PhD in Computer Science department at 
 
 __Research summary:__ I am interested in advancing research in AI and applied mathematics and its application in system design and its operatrion. Our use cases involve the most complex engineering domains like Finite element analysis, Computational fluid dynamics, Computer aided design and learning-enabled nonliner contol.  For application purposes, I primarily use computational physics, simulation process, scientific computing using numerical methods and develop novel algorithms using AI and mathematics for tackling these problem. To this end, the AI sub-fieled that I work with are Deep Active Learning, Surrogate Modeling, Bayesian optimization, Bayesian experimental design, reinforcement learning, computer vision, transformer based learning, graphical probabilistic modeling, Deep Learning and other machine learning methods. In system operation, my research interest are optimization/control of nonlinear system using reinforcement learning with focus of research is to find rare event failures and out-of-distribution detection in trained reinforcement learning controller for reliable AI-based system operation.
 
-
+# 🔥 Projects: 
+- *2020-current*:DARPA [Symbiotic Design for Cyber Physical Systems](https://www.darpa.mil/program/symbiotic-design-for-cyber-physical-systems) 
+- *2019-2020*:DARPA [Progressing Towards Assuredly Safer Autonomous Systems](https://www.darpa.mil/news-events/2020-01-29)
+- *2018-2019* :NSF [Partnerships for International Research and Education (PIRE)](https://beta.nsf.gov/funding/opportunities/partnerships-international-research-education-pire-0)
 
 # 🔥 News
 - *2022.12*: &nbsp;🎉🎉 Our work on deep learning for finite element analysis is available at [IEEE xplore](https://ieeexplore.ieee.org/document/9982714). 
