@@ -1,0 +1,72 @@
+---
+layout: default
+---
+
+<div class="page-hero page-hero-compact">
+  <div class="page-hero-inner">
+    {% if page.project_name %}
+    <a href="{{ page.project_url | relative_url }}" class="breadcrumb">← {{ page.project_name }}</a>
+    {% endif %}
+    <h1>{{ page.title }}</h1>
+    {% if page.authors %}<div class="work-authors-hero">{{ page.authors }}</div>{% endif %}
+    {% if page.venue %}<div class="work-venue-hero">{{ page.venue }}</div>{% endif %}
+  </div>
+</div>
+
+<div class="page-content">
+
+  <!-- Links bar -->
+  {% if page.links %}
+  <div class="work-links-bar fade-up">
+    {% for link in page.links %}
+    <a href="{{ link.url }}" target="_blank" class="work-link-btn">
+      {{ link.label }}
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+    </a>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <!-- Key results -->
+  {% if page.key_stats %}
+  <div class="key-result fade-up">
+    {% if page.key_stats_title %}<h3>{{ page.key_stats_title }}</h3>{% endif %}
+    <div class="key-result-stats">
+      {% for stat in page.key_stats %}
+      <div class="kr-stat">
+        <div class="kr-stat-val">{{ stat.value }}</div>
+        <div class="kr-stat-label">{{ stat.label }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- Main content from markdown -->
+  {{ content }}
+
+  <!-- Gallery -->
+  {% if page.gallery %}
+  <div class="gallery fade-up">
+    {% for img in page.gallery %}
+    <div class="gallery-item">
+      <img src="{{ img.src | relative_url }}" alt="{{ img.caption | default: page.title }}">
+      {% if img.caption %}<div class="figure-caption">{{ img.caption }}</div>{% endif %}
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <!-- Related media -->
+  {% if page.media %}
+  <h2>Media Coverage</h2>
+  {% for item in page.media %}
+  <div class="media-item fade-up">
+    <div class="media-item-source">{{ item.source }}</div>
+    <div class="media-item-title"><a href="{{ item.url }}" target="_blank">{{ item.title }}</a></div>
+    {% if item.desc %}<div class="media-item-desc">{{ item.desc }}</div>{% endif %}
+  </div>
+  {% endfor %}
+  {% endif %}
+
+</div>

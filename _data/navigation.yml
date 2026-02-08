@@ -1,22 +1,12 @@
-# main links links
-main:
-  - title: "About Me"
-    url: "/#about-me"
-
-  - title: "News"
-    url: "/#-news"
-
-  - title: "Publications"
-    url: "/#-publications"
-
-  - title: "Honors and Awards"
-    url: "/#-honors-and-awards"
-
-  - title: "Educations"
-    url: "/#-educations"
-
-  - title: "Invited Talks"
-    url: "/#-invited-talks"
-
-  - title: "Internships"
-    url: "/#-internships"
+- title: Home
+  url: /
+- title: DARPA CASTLE
+  url: /projects/castle/
+- title: Assured Autonomy
+  url: /projects/assured-autonomy/
+- title: NIST TE
+  url: /projects/transactive-energy/
+- title: UUV Design
+  url: /projects/uuv-design/
+- title: Publications
+  url: /publications/

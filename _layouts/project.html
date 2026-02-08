@@ -1,0 +1,75 @@
+---
+layout: default
+---
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    {% if page.eyebrow %}<div class="section-eyebrow">{{ page.eyebrow }}</div>{% endif %}
+    <h1>{{ page.title }}</h1>
+    {% if page.lead %}<p class="lead">{{ page.lead }}</p>{% endif %}
+  </div>
+</div>
+
+<div class="page-content">
+
+  {% if page.key_stats %}
+  <div class="key-result fade-up">
+    {% if page.key_stats_title %}<h3>{{ page.key_stats_title }}</h3>{% endif %}
+    {% if page.key_stats_desc %}<p>{{ page.key_stats_desc }}</p>{% endif %}
+    <div class="key-result-stats">
+      {% for stat in page.key_stats %}
+      <div class="kr-stat">
+        <div class="kr-stat-val">{{ stat.value }}</div>
+        <div class="kr-stat-label">{{ stat.label }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  {{ content }}
+
+  <!-- Work tiles grid -->
+  {% if page.works %}
+  <h2>Research Works</h2>
+  <div class="work-grid">
+    {% for work in page.works %}
+    <a href="{{ work.url | relative_url }}" class="work-tile fade-up">
+      <div class="work-tile-thumb">
+        {% if work.thumbnail %}
+        <img src="{{ work.thumbnail | relative_url }}" alt="{{ work.title }}">
+        {% else %}
+        <div class="work-tile-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+        </div>
+        {% endif %}
+      </div>
+      <div class="work-tile-body">
+        <h3 class="work-tile-title">{{ work.title }}</h3>
+        {% if work.authors %}<div class="work-tile-authors">{{ work.authors }}</div>{% endif %}
+        {% if work.venue %}<div class="work-tile-venue">{{ work.venue }}</div>{% endif %}
+        {% if work.tags %}
+        <div class="work-tile-tags">
+          {% for tag in work.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+        </div>
+        {% endif %}
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <!-- Media coverage -->
+  {% if page.media %}
+  <h2>Media Coverage</h2>
+  {% for item in page.media %}
+  <div class="media-item fade-up">
+    <div class="media-item-source">{{ item.source }}</div>
+    <div class="media-item-title"><a href="{{ item.url }}" target="_blank">{{ item.title }}</a></div>
+    {% if item.desc %}<div class="media-item-desc">{{ item.desc }}</div>{% endif %}
+    {% if item.date %}<div class="media-item-date">{{ item.date }}</div>{% endif %}
+  </div>
+  {% endfor %}
+  {% endif %}
+
+</div>
